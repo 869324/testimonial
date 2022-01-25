@@ -1,0 +1,90 @@
+@import url(https://fonts.google.com/specimen/Barlow+Semi+Condensed);
+
+body {
+    height: 100vh;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+}
+
+.container {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#daniel {
+    grid-area: daniel;
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(0, 0%, 100%);
+}
+
+#jonathan {
+    grid-area: jonathan;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+#kira {
+    grid-area: kira;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#jeanette {
+    grid-area: jeanette;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#patrick {
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+}
+
+.head {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+img {
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.name {
+    display: block;
+    font-family: Barlow, sans-serif;
+    font-weight: 600;
+}
+
+.position {
+    display: block;
+    font-family: Barlow, sans-serif;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+h1 {
+    font-size: 18px;
+    font-family: Barlow, sans-serif;
+}
+
+P {
+    font-family: Barlow, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    opacity: 0.7;
+}
