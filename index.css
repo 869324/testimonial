@@ -88,3 +88,36 @@ P {
     font-weight: 500;
     opacity: 0.7;
 }
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "jeanette"
+        "patrick"
+        "kira";
+    }
+
+    #daniel {
+        grid-area: daniel;
+    }
+
+    #jonathan {
+        grid-area: jonathan;
+    }
+
+    #jeanette {
+        grid-area: jeanette;
+    }
+
+    #patrick {
+        grid-area: patrick;
+    }
+
+    #kira {
+        grid-area: kira;
+    }
+}
